@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Bash(python -c \"import pytest; print\\('pytest', pytest.__version__\\)\")",
+      "Bash(python -c \"import anthropic; print\\('anthropic', anthropic.__version__\\)\")",
+      "Bash(python -m pytest tests/test_agent.py -x)",
+      "Bash(python -m pytest tests/test_agent.py -v)",
+      "Bash(python -m pytest tests/test_cli.py -v)",
+      "Bash(python -m pytest)",
+      "Bash(python *)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(git add *)"
+    ]
+  }
+}
